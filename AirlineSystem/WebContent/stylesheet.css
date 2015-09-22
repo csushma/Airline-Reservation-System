@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+       
+        .panelGridCenter {
+    		margin: 0 auto;
+    		text-align: center;
+    		border-collapse: collapse;
+		} 
+		
+		.commandCenter{
+			line-height: normal;
+			color: Black; 
+			font-style: normal; 
+			font-size: 15px; 
+			font-family: "Comic Sans MS", Sans-Serif';	
+		}
+		
+		img{
+			width: 100%;
+			height: 300px;
+		}
+		
+		.welcome{
+			 color: #661CA3;
+			 font-size: 40px;
+			 text-align: center;
+		}
+		h4{
+			text-align: center;
+			color: #B8531D;
+			text-decoration: underline;
+		}
+		h3{
+			text-align: center;
+			color: #D12A40;
+		}   
+		h2{
+			color: #16A622;
+			text-align: center;
+		} 
+		.outputLabel{
+			font-weight: bold; 
+			text-decoration: underline; 
+			font-size: 16px; 
+			font-family: sans-serif;
+		}
+		.inputText{
+			border-style: double; 
+		}
+		.TABLE{
+			text-align: center;
+			border-collapse: collapse;
+			border-style: solid; 
+			border-width: medium;  
+			background-color: Beige; 
+			margin-top: auto;
+		 	color: #004080;
+		  	font-size: 14px; 
+		  	font-family: "Trebuchet MS", Sans-Serif';
+		}

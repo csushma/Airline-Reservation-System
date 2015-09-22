@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<managed-bean-name>AvailableSeatsMB</managed-bean-name>
+		<managed-bean-class>airlinereservation.managedBean.AvailableSeatsMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>FareDetailsMB</managed-bean-name>
+		<managed-bean-class>airlinereservation.managedBean.FareDetailsMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>FlightSearchMB</managed-bean-name>
+		<managed-bean-class>airlinereservation.managedBean.FlightSearchMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>PassengerFlightMB</managed-bean-name>
+		<managed-bean-class>airlinereservation.managedBean.PassengerFlightMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>PassengersInfoMB</managed-bean-name>
+		<managed-bean-class>airlinereservation.managedBean.PassengersInfoMB</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>startPage</display-name>
+		<from-view-id>/startPage.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>passenger_Info.jsp</from-outcome>
+			<to-view-id>/passenger_Info.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>startPage</display-name>
+		<from-view-id>/startPage.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>seatAvailability.jsp</from-outcome>
+			<to-view-id>/seatAvailability.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>startPage</display-name>
+		<from-view-id>/startPage.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>flightSearch.jsp</from-outcome>
+			<to-view-id>/flightSearch.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>startPage</display-name>
+		<from-view-id>/startPage.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>fareSearch.jsp</from-outcome>
+			<to-view-id>/fareSearch.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>startPage</display-name>
+		<from-view-id>/startPage.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>passenger_flight.jsp</from-outcome>
+			<to-view-id>/passenger_flight.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>seatAvailability</display-name>
+		<from-view-id>/seatAvailability.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>startPage.jsp</from-outcome>
+			<to-view-id>/startPage.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>passenger_Info</display-name>
+		<from-view-id>/passenger_Info.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>startPage.jsp</from-outcome>
+			<to-view-id>/startPage.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>passenger_flight</display-name>
+		<from-view-id>/passenger_flight.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>startPage.jsp</from-outcome>
+			<to-view-id>/startPage.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>fareSearch</display-name>
+		<from-view-id>/fareSearch.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>startPage.jsp</from-outcome>
+			<to-view-id>/startPage.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>flightSearch</display-name>
+		<from-view-id>/flightSearch.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>startPage.jsp</from-outcome>
+			<to-view-id>/startPage.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>
